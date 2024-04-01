@@ -1,0 +1,145 @@
+.recipes{
+    text-align: center;
+    height: 780px;
+    margin-top: 30px;
+
+    &__big{
+        @extend %big;
+    }
+
+    h1{
+        @extend %h1_for_big;
+        margin-bottom: 28px;
+    }
+
+    &__parts{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 30px;
+        display: grid;
+        margin-top: 37px;
+        height: 510px;
+        
+
+        &__1{
+            grid-row: 1/4;
+            background: url('img/meat.png') no-repeat;
+            background-size: cover;         
+            border-radius: 6px;  
+            padding: 60px 0;
+
+            h2{
+                
+                margin-bottom: 85px;
+                a{
+                    background-color:rgba($color: $black, $alpha: 1.0);
+                    @extend %text_a;
+                    font-size: 10px;
+                    font-weight: 800;
+                    letter-spacing: 1px;
+                }
+
+            }
+
+            h3{
+                font-size: 24px;
+                margin: 35px 0 65px;
+                line-height: 1.6;
+            }
+
+            p{
+                font-weight: 100;
+                font-size: 14px;
+            }
+
+            &_img{
+                
+                display: flex;
+                justify-content: space-between;
+                font-weight: 12px;
+                width: 145px;
+                align-items: center;
+                margin: 100px auto 0;
+            }
+
+
+        }
+
+        &__2{
+            background-color: $darkgray;
+            border-radius: 6px;  
+            text-align: left;
+            padding: 30px;
+        }
+
+        &__3{
+            background: url('img/dish.png') no-repeat;
+            background-size: cover;   
+            border-radius: 6px;  
+            padding: 30px;
+            text-align: left;
+        }
+        &__4{
+            background-color: $green;
+            border-radius: 6px;
+            padding: 30px;
+            text-align: left;  
+            color: black;
+        }
+    }
+}
+
+.text{
+    line-height: 1.87;
+    margin-bottom: 20px;
+}
+
+.common{
+    
+    display: flex;
+    justify-content: space-between;
+
+
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        width: 160px;
+        font-size: 12px;
+        font-weight: 100;
+
+        &_lunch{
+            @extend %text;
+            a{
+                background-color:rgba($color: $black, $alpha: 1.0);
+                @extend %text_a;
+            }
+        }
+
+        &_dinner{
+            @extend %text;
+            a{
+                background-color:rgba($color: $black, $alpha: 0.7);
+                @extend %text_a;
+            }
+        }
+        
+        &_sweets{
+            @extend %text;
+            a{
+                background-color: black;
+                color: $white;
+                @extend %text_a;
+            }
+        }
+    }
+
+    &__img{
+        
+        display: flex;
+        justify-content: space-between;
+        font-weight: 12px;
+        width: 145px;
+        align-items: center;
+    }
+}
+

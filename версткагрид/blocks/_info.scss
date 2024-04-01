@@ -1,0 +1,50 @@
+.info{
+    margin-top: 80px;
+    margin-bottom: 61px;    
+    text-align: center;
+
+    h1{
+        font-size: 72px;
+        margin-bottom: 16px;
+    }
+
+    span{
+        font-weight: 100;
+    }
+
+    &__button{
+        color: $black;
+        margin-top: 65px;
+        margin-bottom: 95px;
+
+        a{
+            background-color: $green;
+            padding: 25px 58px;
+            border-radius: 43px;
+            font-size: 18px;
+            font-weight: 900;
+            letter-spacing: 3.2px;
+        }
+
+        a:hover{
+            color: white;
+        }
+    }
+
+    &__inf{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 97px;
+        padding-right: 98px; 
+        margin-bottom: 161px;
+        
+        h2{
+            margin-top: 16px;
+        }
+        p{
+            margin-top: 16px;
+            font-weight: 100;
+            font-size: 14px;
+        }
+    }
+}

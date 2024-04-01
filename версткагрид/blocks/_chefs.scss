@@ -1,0 +1,47 @@
+.chefs{
+    text-align: center;
+    height: 402px;
+    
+    &__big{
+        @extend %big;
+    }
+
+    h1{
+        @extend %h1_for_big;
+        margin-bottom: 28px;
+    }
+
+    &__parts{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 37px;
+        gap: 30px;
+
+        &__1{
+            width: 350px;
+            &_text{
+                height: 65px;
+                margin-bottom: 24px;
+                text-align: start;
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+                &_w{
+                    p{
+                    font-size: 12px;
+                    font-weight: 100;
+                    margin-top: 6px;
+                    }
+                }
+            }
+
+            &_pics{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}

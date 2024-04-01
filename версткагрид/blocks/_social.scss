@@ -1,0 +1,96 @@
+.social{
+    
+    text-align: center;
+    height: 600px;
+    margin-top: 30px;
+
+    &__big{
+        @extend %big;
+    }
+
+    h1{
+        @extend %h1_for_big;
+        margin-bottom: 28px;
+    }
+
+    &__parts{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-template-rows: 330px;
+        font-size: 14px;
+        color: $lightgray;
+        margin-top: 30px;
+
+        &__twi{
+            background-color: $darkgray;
+            border-radius: 6px;
+
+            &_p{
+                text-align: left;
+                color: $green;
+                padding-left: 30px;
+            }
+        }
+        &__inst{
+            background-color: $darkgray;     
+            border-radius: 6px;
+
+            &_1{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 120px 119px;
+            }
+        }
+        &__fb{
+            background-color: $darkgray;
+            border-radius: 6px;
+        }
+    }
+
+    
+}
+
+.common2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px;
+    border-bottom: 2px solid $wordsgray;
+
+
+    &_icon{
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+
+    &_button{
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-align: center;
+
+        a{
+            padding: 15px 19px;
+            border: 1px solid $lightgray;
+            color: $lightgray;
+            border-radius: 30px;
+            font-size: 10px;
+        }
+
+        a:hover{
+            background-color: $green;
+            border: none;
+            color: $black;
+        }
+    }
+    &_twifb{
+        text-align: left;
+        padding: 20px 30px;
+
+        p{
+            margin-top: 20px;
+            line-height: 2;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.image{
+    background: url('img/main.svg') no-repeat;
+    background-size: cover;
+    height: 1080px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 33px;
+    margin-bottom: 33px;
+
+    &__logo{
+        display: flex;
+        align-items: flex-end;
+        color: $green;
+
+        img{
+            margin-right: 9px;
+        }
+    }
+
+    &__list{
+        ul{
+            display: flex;
+            gap: 45px;
+            
+            a:hover{
+                color: $green;
+            }
+        }
+
+    }
+}
+
+hr{
+    height: 2px;
+    opacity: 20%;
+}
